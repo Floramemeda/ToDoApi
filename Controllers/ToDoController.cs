@@ -106,12 +106,15 @@ namespace ToDoApi.Controllers
 
             else
             {
-                if(existingToDoItem.Title == toDo.Title && existingToDoItem.State == toDo.State)
+                if (existingToDoItem.Title == toDo.Title && existingToDoItem.State == toDo.State)
                 {
                     return NoContent();
                 }
                 else
                 {
+                    existingToDoItem.Title = toDo.Title;
+                    existingToDoItem.State = toDo.State;
+                    _context.Update(existingToDoItem);
                     var toDoItemChangedEvent = new ToDoItemChangedEvent(toDo.Id, toDo.Title, toDo.State);
                     await _toDoEventService.AddAndSaveEventAsync(toDoItemChangedEvent);
                     await _toDoEventService.PublishEventsThroughEventBusAsync(toDoItemChangedEvent);
