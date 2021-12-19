@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\Source\\ToDoApi\\ToDoAPI.csproj",
+  "FilePath": "d:\\Source\\ToDoApi\\ToDoApi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14399,7 +14399,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "ToDoAPI",
+  "RootNamespace": "ToDoApi",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
