@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source\\ToDoAPI\\ToDoAPI.csproj": {}
+    "D:\\Source\\ToDoApi\\ToDoAPI.csproj": {}
   },
   "projects": {
-    "D:\\Source\\ToDoAPI\\ToDoAPI.csproj": {
+    "D:\\Source\\ToDoApi\\ToDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source\\ToDoAPI\\ToDoAPI.csproj",
+        "projectUniqueName": "D:\\Source\\ToDoApi\\ToDoAPI.csproj",
         "projectName": "ToDoAPI",
-        "projectPath": "D:\\Source\\ToDoAPI\\ToDoAPI.csproj",
+        "projectPath": "D:\\Source\\ToDoApi\\ToDoAPI.csproj",
         "packagesPath": "C:\\Users\\OEM\\.nuget\\packages\\",
-        "outputPath": "D:\\Source\\ToDoAPI\\obj\\",
+        "outputPath": "D:\\Source\\ToDoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OEM\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -35,6 +35,44 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Azure.ServiceBus": {
+              "target": "Package",
+              "version": "[4.1.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[13.15.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
