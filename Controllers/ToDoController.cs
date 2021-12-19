@@ -83,7 +83,7 @@ namespace ToDoApi.Controllers
             ToDo item = new ToDo {Id = Guid.NewGuid(), Title = toDo.Title, State = toDo.State ?? ToDoState.ToDo};
             _context.ToDos.Add(item);
             await _context.SaveChangesAsync();
-            return Created(new Uri($"{Request.Host}/ToDo/{item.Id}"), item);
+            return CreatedAtAction(nameof(ToDo), new {id = item.Id}, item);
         }
 
 
